@@ -6,7 +6,7 @@ describe "hash_person.rb" do
     hash_person = $".select{|r| r.include? 'hash_person.rb'}
     $".delete(hash_person.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("Osi 24 Songwriter")
+    allow_any_instance_of(Object).to receive(:gets).and_return("Osi 24 Songwriter\n")
     
     response = /\{:name=>"Osi", :age=>24, :occupation=>"Songwriter"\}/
 
@@ -25,7 +25,7 @@ describe "hash_person.rb" do
     hash_person = $".select{|r| r.include? 'hash_person.rb'}
     $".delete(hash_person.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("Lia 32 Engineer")
+    allow_any_instance_of(Object).to receive(:gets).and_return("Lia 32 Engineer\n")
     
     response = /\{:name=>"Lia", :age=>32, :occupation=>"Engineer"\}/
 
