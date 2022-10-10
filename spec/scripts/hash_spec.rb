@@ -77,7 +77,7 @@ end
 
 describe "hash_find_value.rb" do
   
-  it "prints Hash of '22 is under the key: e.', when input is '22'", points: 1 do
+  it "prints Hash of '0 is under the key: g.', when input is '0'", points: 1 do
     # Un-require hash_find_value.rb
     hash_find_value = $".select{|r| r.include? 'hash_find_value.rb'}
     $".delete(hash_find_value.first)
@@ -85,19 +85,19 @@ describe "hash_find_value.rb" do
     allow_any_instance_of(Object).to receive(:gets).and_return("22\n")
     allow_any_instance_of(Kernel).to receive(:rand).and_return(22)
     
-    response = /22 is under the key: e/i
+    response = /0 is under the key: g/i
 
     # expect { require_relative("../../hash_find_value") }.to output(response).to_stdout
     output = with_captured_stdout { require_relative('../../hash_find_value')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be 'Enter an integer to find:\\n22 is under the key: e', but was #{output}."
+      "Expected output to be:\n'Enter an integer to find:\n0 is under the key: g', but was:\n #{output}."
   end
 end
 
 describe "hash_find_value.rb" do
   
-  it "prints Hash of '32 is under the key: e.', when input is '32'", points: 1 do
+  it "prints Hash of '300 is under the key: c.', when input is '300'", points: 1 do
     # Un-require hash_find_value.rb
     hash_find_value = $".select{|r| r.include? 'hash_find_value.rb'}
     $".delete(hash_find_value.first)
@@ -105,13 +105,13 @@ describe "hash_find_value.rb" do
     allow_any_instance_of(Object).to receive(:gets).and_return("32\n")
     allow_any_instance_of(Kernel).to receive(:rand).and_return(32)
     
-    response = /32 is under the key: e/i
+    response = /300 is under the key: c/i
 
     # expect { require_relative("../../hash_find_value") }.to output(response).to_stdout
     output = with_captured_stdout { require_relative('../../hash_find_value')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be 'Enter an integer to find:\\n32 is under the key: e', but was #{output}."
+      "Expected output to be 'Enter an integer to find:\\n300 is under the key: c', but was #{output}."
   end
 end
 
