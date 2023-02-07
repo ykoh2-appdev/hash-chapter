@@ -1,84 +1,19 @@
 # Ruby Practice
 
-Run your Ruby file by typing `ruby ` and then the name of the file you want to run in the Terminal.
+ 1. Open a file (e.g. `hash_person.rb`) in the editor window.
+ 1. Modify the file per the instructions on top.
+ 1. Run your Ruby file by typing `ruby ` and then the name of the file you want to run in the terminal. If we want to run `hash_person.rb`, we can write the command:
 
-If we want to run `hash_person.rb`, we can write the command:
+      ```bash
+      ruby hash_person.rb
+      ```
+   
+      Remember, if there are multiple files with similar names, start typing the name and then just press <kbd>Tab</kbd> on your keyboard to let the terminal complete the name. You rarely need to type full filenames out — use **tab completion**!
 
-```bash
-ruby hash_person.rb
-```
+1. To re-run this command, you can use the <kbd>Up ↑</kbd> and <kbd>Down ↓</kbd> arrow keys to look at the history of commands you've run in a terminal.
+1. When you think you have the required output, run `rails grade` and proceed when the test passes without errors.
 
-To re-run this command, you can use the UP and DOWN arrow keys to look at the history of commands you've run in a Terminal.
-
-## Hash
-
-### hash_person.rb
-Input:
-```
-Maude 24 Artist
-```
-
-Key output:
-`{ :name => "Maude", :age => 24, :occupation => "Artist" }`
-
-Complete input and output example:
-```bash
-"Enter a name, age, and occupation separated by spaces:"
-Maude 24 Artist
-{ :name => "Maude", :age => 24, :occupation => "Artist" }
-```
-
-###### Make sure the value of the :age key is an Integer
-
-### hash_dig.rb
-
-Write a program that uses the `sample_hash` variable and prints the value of key "history"
-
-```ruby
-sample_hash = {
-   :class => { 
-      :student => { 
-         :name => "Mike",
-         "marks" => { 
-            "physics" => 70,
-            "history" => 80
-         }
-      }
-   }
-}
-```
-
-### hash_find_value.rb
-
-Write a program that:
-   Asks the user for an Integer, then checks to see if that integer is
-   a value of any of the keys in sample_hash.
-   If you find the number, print out "100 is under the key: a."
-   If you don't find the number print out "Could not find the integer 100"
-
-Example:
-
-```bash
-"Enter an integer:"
-4
-"Could not find the integer 4"
-```
-
-### hash_list.rb
-
-Given this list of people, print only names of people who are at least 16.
-
-Yes, you could just look at it with your eyes and print their names, but imagine that you couldn't because there are a million items in the list.
-
-Use the variable, loops, and conditionals instead.
-
-Output something like:
-
-```bash
-"Jerry"
-"Sloane"
-"Hurly"
-```
+If you are struggling, **try to experiment directly in the IRB environment** by typing `irb` into the terminal and pressing enter. This will start an interactive Ruby terminal, where you can enter individual lines of Ruby to see their output. If you start `irb` then the terminal will no longer be in the `bash` environment so things like `rails grade` won't work. You will need to open a second terminal with the plus (+) icon and switch between the `irb` and `bash` terminals as needed. Alternatively type `exit` at the IRB terminal prompt to return to the `bash` environment.
 
 ## Specs
 <details>
