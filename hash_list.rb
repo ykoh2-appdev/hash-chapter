@@ -1,8 +1,17 @@
-# Given this list of people, print only names of people who are at least 16.
+# Given this list of people, print only names of 
+# people who are at least 16.
 # 
-# Yes, you could just look at it with your eyes and print their names, but imagine that you couldn't because there are a million items in the list.
+# Yes, you could just look at it with your eyes 
+# and print their names, but imagine that you 
+# couldn't because there are a million items in the list.
 # 
 # Use the variable, loops, and conditionals instead.
+#
+# Print each name on a new line, like:
+#
+#   James
+#   Yolanda
+#   etc.
 
 list_of_people = [
   { :name => "James", :age => 16 },

@@ -1,4 +1,5 @@
-# Write a program that uses the sample_hash variable and prints the value of key "history"
+# Write a program that uses the sample_hash 
+# variable and prints the value of key "history"
 
 sample_hash = {
    :class => { 
@@ -11,3 +12,8 @@ sample_hash = {
       }
    }
 }
+
+
+#### SOLUTION:
+
+# p sample_hash.fetch(:class).fetch(:student).fetch("marks").fetch("history")
