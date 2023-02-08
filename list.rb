@@ -23,3 +23,9 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# list.rb prints 'James', 'Yolanda', 'Red', and  'Fatimah' using variables, loops, if statements, and Hash methods' 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

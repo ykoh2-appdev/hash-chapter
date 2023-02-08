@@ -14,3 +14,16 @@
 sample_hash = {:a => 100, :b => 200, :c => 300, :d => 400, :e => rand(200), :f => 600, :g => 0 }
 
 p "Enter an integer to find:"
+
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# find_value.rb prints Hash of 'Could not find the integer 4', when input is '4' 
+# 
+# find_value.rb prints Hash of '100 is under the key: a.', when input is '100' 
+# 
+# find_value.rb prints Hash of '22 is under the key: e.', when input is '22' 
+# 
+# find_value.rb prints Hash of '32 is under the key: e.', when input is '32' 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

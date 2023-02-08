@@ -17,3 +17,10 @@ sample_hash = {
 #### SOLUTION:
 
 # p sample_hash.fetch(:class).fetch(:student).fetch("marks").fetch("history")
+
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# dig.rb prints '80' by retriving the value from the Hash 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
