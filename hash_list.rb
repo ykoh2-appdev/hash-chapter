@@ -14,3 +14,11 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+list_of_people.each_with_index do |person, index|
+  number = person.fetch(:age)
+  
+if number.to_i >= 16
+  p person.fetch(:name)
+end
+
+end
